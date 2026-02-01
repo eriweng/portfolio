@@ -65,17 +65,17 @@ export default function About() {
             <div className="prose prose-invert text-muted text-lg leading-relaxed mb-10">
               <p>
                 <Trans i18nKey="about.summary_1">
-                    With 4-5 years of cross-disciplinary experience, currently serving as a <span className="text-white font-medium">Digital Platform Specialist</span> at KING TONY.
+                    With 4-5 years of cross-disciplinary experience, currently serving as a <span className="text-text font-medium">Digital Platform Specialist</span> at KING TONY.
                 </Trans>
               </p>
               <p>
                 <Trans i18nKey="about.summary_2">
-                    Specializing in transforming <span className="text-white font-medium">Media Design</span> backgrounds into precise <span className="text-white font-medium">UI/UX Implementations</span>. I leverage rigorous logic from HR & Sales domains to ensure data consistency and process efficiency.
+                    Specializing in transforming <span className="text-text font-medium">Media Design</span> backgrounds into precise <span className="text-text font-medium">UI/UX Implementations</span>. I leverage rigorous logic from HR & Sales domains to ensure data consistency and process efficiency.
                 </Trans>
               </p>
               <p>
                 <Trans i18nKey="about.summary_3">
-                    Focusing on <span className="text-white font-medium">Shopify Development</span> and <span className="text-white font-medium">React/Node.js</span> Full Stack solutions. Capable of building testing sites from scratch, integrating third-party APIs, and handling complex membership logic to optimize global market conversions.
+                    Focusing on <span className="text-text font-medium">Shopify Development</span> and <span className="text-text font-medium">React/Node.js</span> Full Stack solutions. Capable of building testing sites from scratch, integrating third-party APIs, and handling complex membership logic to optimize global market conversions.
                 </Trans>
               </p>
             </div>
@@ -86,26 +86,26 @@ export default function About() {
             
             <div className="space-y-4 mb-10">
               <div>
-                <h4 className="text-white font-medium mb-2">{t('about.skills.frontend.title')}</h4>
-                <p className="text-muted text-sm border-l-2 border-white/10 pl-3">
+                <h4 className="text-text font-medium mb-2">{t('about.skills.frontend.title')}</h4>
+                <p className="text-muted text-sm border-l-2 border-border pl-3">
                   {t('about.skills.frontend.desc')}
                 </p>
               </div>
               <div>
-                <h4 className="text-white font-medium mb-2">{t('about.skills.backend.title')}</h4>
-                <p className="text-muted text-sm border-l-2 border-white/10 pl-3">
+                <h4 className="text-text font-medium mb-2">{t('about.skills.backend.title')}</h4>
+                <p className="text-muted text-sm border-l-2 border-border pl-3">
                   {t('about.skills.backend.desc')}
                 </p>
               </div>
               <div>
-                <h4 className="text-white font-medium mb-2">{t('about.skills.platform.title')}</h4>
-                <p className="text-muted text-sm border-l-2 border-white/10 pl-3">
+                <h4 className="text-text font-medium mb-2">{t('about.skills.platform.title')}</h4>
+                <p className="text-muted text-sm border-l-2 border-border pl-3">
                   {t('about.skills.platform.desc')}
                 </p>
               </div>
               <div>
-                <h4 className="text-white font-medium mb-2">{t('about.skills.tools.title')}</h4>
-                <p className="text-muted text-sm border-l-2 border-white/10 pl-3 whitespace-pre-line">
+                <h4 className="text-text font-medium mb-2">{t('about.skills.tools.title')}</h4>
+                <p className="text-muted text-sm border-l-2 border-border pl-3 whitespace-pre-line">
                   {t('about.skills.tools.desc')}
                 </p>
               </div>
@@ -120,16 +120,16 @@ export default function About() {
               <Briefcase className="text-accent" /> {t('about.experienceTitle')}
             </h3>
 
-            <div className="space-y-8 border-l border-white/10 pl-6 ml-3 mb-12">
+            <div className="space-y-8 border-l border-border pl-6 ml-3 mb-12">
               {experiences.map((exp, idx) => (
                 <div key={idx} className="relative">
                   <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-accent ring-4 ring-background"></span>
                   <div className="mb-2">
-                    <h4 className="text-lg font-bold text-white">{exp.role}</h4>
+                    <h4 className="text-lg font-bold text-text">{exp.role}</h4>
                     <div className="text-sm text-accent mb-1">{exp.company}</div>
                     <span className="text-xs font-mono text-muted">{exp.period}</span>
                   </div>
-                  <ul className="text-sm text-muted list-disc list-inside space-y-1 marker:text-white/30">
+                  <ul className="text-sm text-muted list-disc list-inside space-y-1 marker:text-muted/50">
                     {exp.description.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}
@@ -144,12 +144,12 @@ export default function About() {
 
             <div className="grid gap-4">
               {educations.map((edu, idx) => (
-                <div key={idx} className="p-4 rounded-lg bg-black/20 border border-white/5 flex justify-between items-center hover:border-accent/30 transition-colors">
+                <div key={idx} className="p-4 rounded-lg bg-primary/40 border border-border flex justify-between items-center hover:border-accent/30 transition-colors">
                   <div>
-                    <h4 className="font-bold text-white">{edu.school}</h4>
+                    <h4 className="font-bold text-text">{edu.school}</h4>
                     <p className="text-sm text-muted">{edu.degree}</p>
                   </div>
-                  <span className="text-xs px-2 py-1 rounded bg-white/10 text-white/70">{edu.status}</span>
+                  <span className="text-xs px-2 py-1 rounded bg-secondary text-muted">{edu.status}</span>
                 </div>
               ))}
             </div>

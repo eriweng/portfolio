@@ -1,23 +1,52 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #18181B;
-  /* Zinc 900 */
-  --color-secondary: #27272A;
-  /* Zinc 800 */
-  --color-accent: #2563EB;
-  /* Blue 600 */
-  --color-background: #09090B;
-  /* Zinc 950 */
-  --color-text: #FAFAFA;
-  /* Zinc 50 */
-  --color-muted: #A1A1AA;
-  /* Zinc 400 */
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-background: var(--background);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
 
   --font-display: "Archivo", sans-serif;
   --font-body: "Space Grotesk", sans-serif;
 
   --animate-glitch: glitch 1s linear infinite;
+}
+
+:root {
+  /* Dark Mode (Default) */
+  --primary: #18181B;
+  /* Zinc 900 */
+  --secondary: #27272A;
+  /* Zinc 800 */
+  --accent: #2563EB;
+  /* Blue 600 */
+  --background: #09090B;
+  /* Zinc 950 */
+  --text: #FAFAFA;
+  /* Zinc 50 */
+  --muted: #A1A1AA;
+  /* Zinc 400 */
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+:root[data-theme="light"] {
+  /* Light Mode */
+  --primary: #FFFFFF;
+  /* White */
+  --secondary: #F1F5F9;
+  /* Slate 100 */
+  --accent: #2563EB;
+  /* Blue 600 - Same for brand consistency */
+  --background: #F8FAFC;
+  /* Slate 50 */
+  --text: #0F172A;
+  /* Slate 900 */
+  --muted: #64748B;
+  /* Slate 500 */
+  --border: rgba(0, 0, 0, 0.1);
 }
 
 @layer base {
