@@ -20,18 +20,20 @@ export default function Hero() {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight mb-6 animate-fade-in-up delay-100">
-          Building the
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-gray-500">
-            Digital Future
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight mb-6 animate-fade-in-up delay-100">
+          Eri Weng
+          <span className="block text-2xl md:text-4xl lg:text-5xl mt-4 text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-gray-500">
+            Frontend Developer <br className="hidden md:block" />
+            & Digital Platform Specialist
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-muted max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up delay-200">
-          Frontend Developer & UI/UX Designer crafting immersive web experiences with
-          <span className="text-white font-medium"> React</span> &
-          <span className="text-white font-medium"> Tailwind CSS</span>.
+          Crafting precise UI/UX experiences with
+          <span className="text-white font-medium"> React</span>,
+          <span className="text-white font-medium"> Shopify</span> &
+          <span className="text-white font-medium"> Node.js</span>.
         </p>
 
         {/* CTA Buttons */}

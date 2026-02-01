@@ -13,11 +13,11 @@ export default function Contact() {
         </p>
 
         <a
-          href="mailto:contact@eri.dev"
+          href="mailto:wendyweng1223@gmail.com"
           className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-[0_0_20px_rgba(255,255,255,0.2)] mb-12"
         >
           <Mail />
-          Say Hello
+          Send Email
         </a>
 
         <div className="flex justify-center gap-8">
