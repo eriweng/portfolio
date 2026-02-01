@@ -1,15 +1,17 @@
 import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="py-20 relative">
       <div className="container mx-auto px-6 text-center max-w-2xl">
         <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
-          Let's <span className="text-accent">Connect</span>
+          {t('contact.title').split(' ')[0]} <span className="text-accent">{t('contact.title').split(' ').slice(1).join(' ')}</span>
         </h2>
         <p className="text-muted text-lg mb-10">
-          Whether you have a question, a project offering, or just want to say hi,
-          my inbox is always open.
+          {t('contact.subtitle')}
         </p>
 
         <a
@@ -17,7 +19,7 @@ export default function Contact() {
           className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-[0_0_20px_rgba(255,255,255,0.2)] mb-12"
         >
           <Mail />
-          Send Email
+          {t('contact.cta')}
         </a>
 
         <div className="flex justify-center gap-8">

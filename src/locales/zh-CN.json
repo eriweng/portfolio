@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "projects": "项目作品",
+    "about": "关于我",
+    "contact": "联系方式",
+    "hireMe": "与我合作"
+  },
+  "hero": {
+    "available": "可接受委托",
+    "greeting": "翁莉雯 (Eri Weng)",
+    "title": "前端工程师 <br> & 数字平台管理师",
+    "subtitle": "专精以 <1>React</1>、<1>Shopify</1> 与 <1>Node.js</1> 打造精确的 UI/UX 体验。",
+    "viewProjects": "浏览作品",
+    "contactMe": "联系我"
+  },
+  "projects": {
+    "title": "精选项目",
+    "subtitle": "展示我在全栈开发与电商解决方案的历程。",
+    "filters": {
+      "all": "全部",
+      "frontend": "前端",
+      "backend": "后端",
+      "fullstack": "全栈"
+    },
+    "items": {
+      "1": {
+        "title": "EVERWEAR | 户外服饰电商平台",
+        "description": "户外服饰电商平台团队项目。负责开发高复用性的 React UI 组件，并整合 GSAP 实现流畅的品牌导览动画。"
+      },
+      "2": {
+        "title": "Ranvin | 音乐品牌整合网站",
+        "description": "从 Figma 设计到部署的独立全栈项目 (MERN)。实作 ECPay 金流串接、RWD 响应式界面以及复杂的购物车结账逻辑。"
+      },
+      "3": {
+        "title": "Portfolio V1",
+        "description": "个人作品集网站，采用现代 React 技术栈建置，呈现 Cyberpunk 未来感风格与沉浸式 UI 交互。"
+      }
+    }
+  },
+  "about": {
+    "title": "专业总览",
+    "summary_1": "具备 4-5 年跨领域实战经验，目前于 KING TONY 金统立工业担任 <1>数字平台管理师</1>。",
+    "summary_2": "擅长将 <1>媒体设计</1> 背景转化为精确的 <1>UI/UX 实作</1>。并运用过去在人资与业务领域培养的严谨逻辑，确保数据一致性与流程效率。",
+    "summary_3": "专注于 <1>Shopify 现代化开发流程</1> 与 <1>React/Node.js</1> 全栈开发。具备独立从 0 到 1 构建测试网站、对接第三方 API 以及处理复杂会员逻辑的能力，致力于通过技术手段优化全球市场的产品转化。",
+    "skillsTitle": "技术技能",
+    "skills": {
+      "frontend": {
+        "title": "前端开发",
+        "desc": "HTML5, CSS3, JavaScript (ES6+), React.js, Tailwind CSS, Bootstrap, GSAP 动效"
+      },
+      "backend": {
+        "title": "后端与数据库",
+        "desc": "Node.js, Express.js, PHP, MySQL, RESTful API 对接"
+      },
+      "platform": {
+        "title": "平台开发",
+        "desc": "Shopify CLI, Liquid 模板语言, 客制化主题开发, ECPay 绿界金流对接"
+      },
+      "tools": {
+        "title": "工具与语言",
+        "desc": "Git / GitHub (Git Flow), VS Code, Gemini AI 协作开发, Figma (UI/UX)\n英文 (TOEIC 755, 听/读精通)、台语 (中等)"
+      }
+    },
+    "experienceTitle": "工作经历",
+    "exp_1": {
+      "role": "数字平台管理师",
+      "company": "金统立工业股份有限公司 KING TONY Tools Co. Ltd.",
+      "period": "2025/10 – 现在",
+      "desc_1": "Shopify 现代化开发实作：采用 Shopify CLI + VS Code 建立本地开发环境，导入 Git 版本控制，确保代码变更可溯源。",
+      "desc_2": "AI 协同开发优化：整合 Gemini AI 辅助逻辑撰写与除错，缩短开发周期，实现高效的 Liquid 模板客制化。",
+      "desc_3": "会员交互功能开发：独立开发对接外部 API，实现问卷数据抓取及异步收藏功能 (Wishlist)；针对登录状态设计严谨的渲染逻辑。",
+      "desc_4": "网页维护与除错：负责官网产品资料维护与网页信息除错，确保全球多国语系内容呈现的正确性。"
+    },
+    "exp_2": {
+      "role": "业务客服 / 数据流程分析",
+      "company": "TransPak Taiwan",
+      "period": "2024/10 – 2024/12",
+      "desc_1": "系统化资料维护：熟练操作 ERP 系统，处理百笔以上交易资料，养成对资料结构与流程逻辑的严谨思维。",
+      "desc_2": "复杂需求解构：解读 BOM 表并建立 40 份以上报价单，具备系统化分析产品结构与数据的能力。",
+      "desc_3": "跨部门协作：协调业务、仓库与供应商处理 100 件以上客制化需求，将使用者需求转化为可执行流程。"
+    },
+    "exp_3": {
+      "role": "人资专员 / 营运流程架构",
+      "company": "金嘉隆企业 (所长茶叶蛋)",
+      "period": "2020/03 – 2021/06",
+      "desc_1": "数据一致性维护：管理出缺勤与绩效系统，确保数据正确率 100%，展现对系统数据一致性的维护能力。",
+      "desc_2": "项目管理与合规：执行政府项目 (TTQS) 并确保进度合规，具备严谨的文件审核与法规遵循经验。"
+    },
+    "educationTitle": "教育背景",
+    "edu_1": {
+      "school": "iSpan 资展国际",
+      "degree": "前端网页开发工程师 就业养成班",
+      "status": "结业"
+    },
+    "edu_2": {
+      "school": "私立长荣大学",
+      "degree": "媒体设计科技学系",
+      "status": "学士学位"
+    }
+  },
+  "contact": {
+    "title": "联系我",
+    "subtitle": "无论您有任何问题、项目合作需求，或只是想打个招呼，欢迎随时来信。",
+    "cta": "发送 Email"
+  }
+}

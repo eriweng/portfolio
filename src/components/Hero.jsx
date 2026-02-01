@@ -1,6 +1,9 @@
 import { ArrowRight, ChevronDown } from "lucide-react";
+import { useTranslation, Trans } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Ambience */}
@@ -15,25 +18,26 @@ export default function Hero() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
           </span>
           <span className="text-xs font-mono text-muted tracking-wide uppercase">
-            Available for work
+            {t('hero.available')}
           </span>
         </div>
 
         {/* Main Heading */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight mb-6 animate-fade-in-up delay-100">
-          Eri Weng
+          {t('hero.greeting')}
           <span className="block text-2xl md:text-4xl lg:text-5xl mt-4 text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-gray-500">
-            Frontend Developer <br className="hidden md:block" />
-            & Digital Platform Specialist
+            <Trans i18nKey="hero.title" />
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-muted max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up delay-200">
-          Crafting precise UI/UX experiences with
-          <span className="text-white font-medium"> React</span>,
-          <span className="text-white font-medium"> Shopify</span> &
-          <span className="text-white font-medium"> Node.js</span>.
+          <Trans i18nKey="hero.subtitle">
+             Crafting precise UI/UX experiences with
+            <span className="text-white font-medium"> React</span>,
+            <span className="text-white font-medium"> Shopify</span> &
+            <span className="text-white font-medium"> Node.js</span>.
+          </Trans>
         </p>
 
         {/* CTA Buttons */}
@@ -42,14 +46,14 @@ export default function Hero() {
             href="#projects"
             className="w-full sm:w-auto px-8 py-4 bg-accent hover:bg-blue-600 text-white rounded-lg font-semibold transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)] flex items-center justify-center gap-2 group"
           >
-            View Projects
+            {t('hero.viewProjects')}
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#contact"
             className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-lg font-semibold transition-all backdrop-blur-sm"
           >
-            Contact Me
+            {t('hero.contactMe')}
           </a>
         </div>
       </div>

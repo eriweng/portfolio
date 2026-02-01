@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "hireMe": "Hire Me"
+  },
+  "hero": {
+    "available": "Available for work",
+    "greeting": "Eri Weng",
+    "title": "Frontend Developer <br> & Digital Platform Specialist",
+    "subtitle": "Crafting precise UI/UX experiences with <1>React</1>, <1>Shopify</1> & <1>Node.js</1>.",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me"
+  },
+  "projects": {
+    "title": "Project Highlights",
+    "subtitle": "Showcasing my journey in Full Stack Development and E-commerce Solutions.",
+    "filters": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full Stack"
+    },
+    "items": {
+      "1": {
+        "title": "EVERWEAR | Outdoor E-commerce",
+        "description": "Team project for an outdoor clothing e-commerce platform. Developed high-reusability React UI components and implemented smooth GSAP animations for brand storytelling."
+      },
+      "2": {
+        "title": "Ranvin | Music Brand Integration",
+        "description": "Independent Full Stack project (MERN) from Figma design to deployment. Implemented ECPay integration, RWD interface, and complex cart/checkout logic."
+      },
+      "3": {
+        "title": "Portfolio V1",
+        "description": "Personal portfolio website featuring Cyberpunk aesthetics and immersive UI interactions built with modern React stack."
+      }
+    }
+  },
+  "about": {
+    "title": "Professional Summary",
+    "summary_1": "With 4-5 years of cross-disciplinary experience, currently serving as a <1>Digital Platform Specialist</1> at KING TONY.",
+    "summary_2": "Specializing in transforming <1>Media Design</1> backgrounds into precise <1>UI/UX Implementations</1>. I leverage rigorous logic from HR & Sales domains to ensure data consistency and process efficiency.",
+    "summary_3": "Focusing on <1>Shopify Development</1> and <1>React/Node.js</1> Full Stack solutions. Capable of building testing sites from scratch, integrating third-party APIs, and handling complex membership logic to optimize global market conversions.",
+    "skillsTitle": "Technical Skills",
+    "skills": {
+      "frontend": {
+        "title": "Frontend Development",
+        "desc": "HTML5, CSS3, JavaScript (ES6+), React.js, Tailwind CSS, Bootstrap, GSAP Animation"
+      },
+      "backend": {
+        "title": "Backend & Database",
+        "desc": "Node.js, Express.js, PHP, MySQL, RESTful API Integration"
+      },
+      "platform": {
+        "title": "Platform Development",
+        "desc": "Shopify CLI, Liquid, Theme Customization, ECPay Integration"
+      },
+      "tools": {
+        "title": " Tools & Languages",
+        "desc": "Git/GitHub (Git Flow), VS Code, Gemini AI, Figma\nEnglish (TOEIC 755), Taiwanese (Intermediate)"
+      }
+    },
+    "experienceTitle": "Professional Experience",
+    "exp_1": {
+      "role": "Digital Platform Specialist",
+      "company": "KING TONY Tools Co. Ltd.",
+      "period": "2025/10 – Present",
+      "desc_1": "Shopify Modern Development: Implemented Shopify CLI + VS Code environment with Git version control for transparent code tracking.",
+      "desc_2": "AI-Assisted Optimization: Integrated Gemini AI for logic debugging and efficient Liquid template customization.",
+      "desc_3": "Interactive Features: Developed Wishlist with async API integration and robust login state rendering.",
+      "desc_4": "Maintenance & Debugging: Managed global product data accuracy and multilingual content debugging."
+    },
+    "exp_2": {
+      "role": "Sales Customer Service / Data Flow Analyst",
+      "company": "TransPak Taiwan",
+      "period": "2024/10 – 2024/12",
+      "desc_1": "Systematic Data Maintenance: Operated ERP systems for transaction data, ensuring structural integrity.",
+      "desc_2": "Complex Requirement Analysis: Decoded BOMs to generate 40+ quotes and analyzed product structures.",
+      "desc_3": "Cross-functional Collaboration: Coordinated 100+ custom requests across departments."
+    },
+    "exp_3": {
+      "role": "HR Specialist / Operations Schema Architect",
+      "company": "Jin Jia Long Enterprise (所長茶葉蛋)",
+      "period": "2020/03 – 2021/06",
+      "desc_1": "Data Consistency: Managed attendance/performance systems with 100% accuracy.",
+      "desc_2": "Project Compliance: Executed government projects (TTQS) with strict regulatory adherence."
+    },
+    "educationTitle": "Education",
+    "edu_1": {
+      "school": "iSpan International",
+      "degree": "Frontend Web Developer Bootcamp",
+      "status": "Completed"
+    },
+    "edu_2": {
+      "school": "Chang Jung Christian University",
+      "degree": "Information and Media Design",
+      "status": "Bachelor's Degree"
+    }
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "subtitle": "Whether you have a question, a project offering, or just want to say hi, my inbox is always open.",
+    "cta": "Send Email"
+  }
+}

@@ -1,49 +1,52 @@
-import { Terminal, Database, Palette, Briefcase, GraduationCap } from "lucide-react";
+import { Terminal, Briefcase, GraduationCap } from "lucide-react";
+import { useTranslation, Trans } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
+
   const experiences = [
     {
-      company: "KING TONY Tools Co. Ltd. 金統立工業",
-      role: "Digital Platform Specialist 數位平台管理師",
-      period: "2025/10 – Present",
+      company: t('about.exp_1.company'),
+      role: t('about.exp_1.role'),
+      period: t('about.exp_1.period'),
       description: [
-        "Shopify Modern Development: Implemented Shopify CLI + VS Code environment with Git version control for transparent code tracking.",
-        "AI-Assisted Optimization: Integrated Gemini AI for logic debugging and efficient Liquid template customization.",
-        "Interactive Features: Developed Wishlist with async API integration and robust login state rendering.",
-        "Maintenance & Debugging: Managed global product data accuracy and multilingual content debugging."
+        t('about.exp_1.desc_1'),
+        t('about.exp_1.desc_2'),
+        t('about.exp_1.desc_3'),
+        t('about.exp_1.desc_4')
       ]
     },
     {
-      company: "TransPak Taiwan",
-      role: "Sales Customer Service / Data Flow Analyst",
-      period: "2024/10 – 2024/12",
+      company: t('about.exp_2.company'),
+      role: t('about.exp_2.role'),
+      period: t('about.exp_2.period'),
       description: [
-        "Systematic Data Maintenance: Operated ERP systems for transaction data, ensuring structural integrity.",
-        "Complex Requirement Analysis: Decoded BOMs to generate 40+ quotes and analyzed product structures.",
-        "Cross-functional Collaboration: Coordinated 100+ custom requests across departments."
+        t('about.exp_2.desc_1'),
+        t('about.exp_2.desc_2'),
+        t('about.exp_2.desc_3')
       ]
     },
     {
-      company: "Jin Jia Long Enterprise (所長茶葉蛋)",
-      role: "HR Specialist / Operations Schema Architect",
-      period: "2020/03 – 2021/06",
+      company: t('about.exp_3.company'),
+      role: t('about.exp_3.role'),
+      period: t('about.exp_3.period'),
       description: [
-        "Data Consistency: Managed attendance/performance systems with 100% accuracy.",
-        "Project Compliance: Executed government projects (TTQS) with strict regulatory adherence."
+        t('about.exp_3.desc_1'),
+        t('about.exp_3.desc_2')
       ]
     }
   ];
 
   const educations = [
     {
-      school: "iSpan International",
-      degree: "Frontend Web Developer Bootcamp",
-      status: "Completed"
+      school: t('about.edu_1.school'),
+      degree: t('about.edu_1.degree'),
+      status: t('about.edu_1.status')
     },
     {
-      school: "Chang Jung Christian University",
-      degree: "Information and Media Design",
-      status: "Bachelor's Degree"
+      school: t('about.edu_2.school'),
+      degree: t('about.edu_2.degree'),
+      status: t('about.edu_2.status')
     }
   ];
 
@@ -56,51 +59,54 @@ export default function About() {
           {/* Left Column: Summary & Skills */}
           <div>
             <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
-              Professional <span className="text-accent">Summary</span>
+              {t('about.title').split(' ')[0]} <span className="text-accent">{t('about.title').split(' ').slice(1).join(' ')}</span>
             </h2>
             
             <div className="prose prose-invert text-muted text-lg leading-relaxed mb-10">
               <p>
-                With 4-5 years of cross-disciplinary experience, currently serving as a 
-                <span className="text-white font-medium"> Digital Platform Specialist</span> at KING TONY.
+                <Trans i18nKey="about.summary_1">
+                    With 4-5 years of cross-disciplinary experience, currently serving as a <span className="text-white font-medium">Digital Platform Specialist</span> at KING TONY.
+                </Trans>
               </p>
               <p>
-                Specializing in transforming <span className="text-white font-medium">Media Design</span> backgrounds into precise 
-                <span className="text-white font-medium"> UI/UX Implementations</span>. I leverage rigorous logic from HR & Sales domains to ensure data consistency and process efficiency.
+                <Trans i18nKey="about.summary_2">
+                    Specializing in transforming <span className="text-white font-medium">Media Design</span> backgrounds into precise <span className="text-white font-medium">UI/UX Implementations</span>. I leverage rigorous logic from HR & Sales domains to ensure data consistency and process efficiency.
+                </Trans>
               </p>
               <p>
-                Focusing on <span className="text-white font-medium">Shopify Development</span> and <span className="text-white font-medium">React/Node.js</span> Full Stack solutions. Capable of building testing sites from scratch, integrating third-party APIs, and handling complex membership logic to optimize global market conversions.
+                <Trans i18nKey="about.summary_3">
+                    Focusing on <span className="text-white font-medium">Shopify Development</span> and <span className="text-white font-medium">React/Node.js</span> Full Stack solutions. Capable of building testing sites from scratch, integrating third-party APIs, and handling complex membership logic to optimize global market conversions.
+                </Trans>
               </p>
             </div>
 
             <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-              <Terminal className="text-accent" /> Technical Skills
+              <Terminal className="text-accent" /> {t('about.skillsTitle')}
             </h3>
             
             <div className="space-y-4 mb-10">
               <div>
-                <h4 className="text-white font-medium mb-2">Frontend Development</h4>
+                <h4 className="text-white font-medium mb-2">{t('about.skills.frontend.title')}</h4>
                 <p className="text-muted text-sm border-l-2 border-white/10 pl-3">
-                  HTML5, CSS3, JavaScript (ES6+), React.js, Tailwind CSS, Bootstrap, GSAP Animation
+                  {t('about.skills.frontend.desc')}
                 </p>
               </div>
               <div>
-                <h4 className="text-white font-medium mb-2">Backend & Database</h4>
+                <h4 className="text-white font-medium mb-2">{t('about.skills.backend.title')}</h4>
                 <p className="text-muted text-sm border-l-2 border-white/10 pl-3">
-                  Node.js, Express.js, PHP, MySQL, RESTful API Integration
+                  {t('about.skills.backend.desc')}
                 </p>
               </div>
               <div>
-                <h4 className="text-white font-medium mb-2">Platform Development</h4>
+                <h4 className="text-white font-medium mb-2">{t('about.skills.platform.title')}</h4>
                 <p className="text-muted text-sm border-l-2 border-white/10 pl-3">
-                  Shopify CLI, Liquid, Theme Customization, ECPay Integration
+                  {t('about.skills.platform.desc')}
                 </p>
               </div>
               <div>
-                <h4 className="text-white font-medium mb-2">Tools & Languages</h4>
-                <p className="text-muted text-sm border-l-2 border-white/10 pl-3">
-                  Git/GitHub (Git Flow), VS Code, Gemini AI, Figma <br/>
-                  English (TOEIC 755), Taiwanese (Intermediate)
+                <h4 className="text-white font-medium mb-2">{t('about.skills.tools.title')}</h4>
+                <p className="text-muted text-sm border-l-2 border-white/10 pl-3 whitespace-pre-line">
+                  {t('about.skills.tools.desc')}
                 </p>
               </div>
             </div>
@@ -111,7 +117,7 @@ export default function About() {
              <div className="absolute -top-10 -right-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl animate-pulse pointer-events-none"></div>
 
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
-              <Briefcase className="text-accent" /> Professional Experience
+              <Briefcase className="text-accent" /> {t('about.experienceTitle')}
             </h3>
 
             <div className="space-y-8 border-l border-white/10 pl-6 ml-3 mb-12">
@@ -133,7 +139,7 @@ export default function About() {
             </div>
 
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
-              <GraduationCap className="text-accent" /> Education
+              <GraduationCap className="text-accent" /> {t('about.educationTitle')}
             </h3>
 
             <div className="grid gap-4">

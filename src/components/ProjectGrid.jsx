@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { ExternalLink, Github, Code2, ShoppingBag, Music, Palette } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectGrid() {
-  const [filter, setFilter] = useState("All");
+  const { t } = useTranslation();
+  const [filter, setFilter] = useState("all");
 
   const projects = [
     {
       id: 1,
-      title: "EVERWEAR | Outdoor E-commerce",
-      category: "Frontend",
+      title: t('projects.items.1.title'),
+      category: "frontend",
       period: "2025/08 – 2025/09",
-      description: "Team project for an outdoor clothing e-commerce platform. Developed high-reusability React UI components and implemented smooth GSAP animations for brand storytelling.",
+      description: t('projects.items.1.description'),
       tags: ["React.js", "GSAP", "Tailwind CSS", "Teamwork"],
       icon: <ShoppingBag size={40} />,
       link: "#",
@@ -19,10 +21,10 @@ export default function ProjectGrid() {
     },
     {
       id: 2,
-      title: "Ranvin | Music Brand Integration",
-      category: "Full Stack",
+      title: t('projects.items.2.title'),
+      category: "fullstack",
       period: "2025/03 – 2025/06",
-      description: "Independent Full Stack project (MERN) from Figma design to deployment. Implemented ECPay integration, RWD interface, and complex cart/checkout logic.",
+      description: t('projects.items.2.description'),
       tags: ["MySQL", "Express", "React", "Node.js", "ECPay"],
       icon: <Music size={40} />,
       link: "#",
@@ -31,10 +33,10 @@ export default function ProjectGrid() {
     },
     {
       id: 3,
-      title: "Portfolio V1",
-      category: "Frontend",
+      title: t('projects.items.3.title'),
+      category: "frontend",
       period: "2026",
-      description: "Personal portfolio website featuring Cyberpunk aesthetics and immersive UI interactions built with modern React stack.",
+      description: t('projects.items.3.description'),
       tags: ["React", "Tailwind CSS v4", "Vite", "Cyberpunk UI"],
       icon: <Palette size={40} />,
       link: "#",
@@ -43,10 +45,14 @@ export default function ProjectGrid() {
     },
   ];
 
-  const categories = ["All", "Frontend", "Full Stack"];
+  const categories = [
+      { key: "all", label: t('projects.filters.all') },
+      { key: "frontend", label: t('projects.filters.frontend') },
+      { key: "fullstack", label: t('projects.filters.fullstack') },
+  ];
 
   const filteredProjects = projects.filter(
-    (project) => filter === "All" || project.category === filter
+    (project) => filter === "all" || project.category === filter
   );
 
   return (
@@ -55,10 +61,10 @@ export default function ProjectGrid() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div>
             <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-              Project <span className="text-accent">Highlights</span>
+              {t('projects.title').split(' ')[0]} <span className="text-accent">{t('projects.title').split(' ').slice(1).join(' ')}</span>
             </h2>
             <p className="text-muted max-w-lg">
-              Showcasing my journey in Full Stack Development and E-commerce Solutions.
+              {t('projects.subtitle')}
             </p>
           </div>
 
@@ -66,15 +72,15 @@ export default function ProjectGrid() {
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
               <button
-                key={cat}
-                onClick={() => setFilter(cat)}
+                key={cat.key}
+                onClick={() => setFilter(cat.key)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border ${
-                  filter === cat
+                  filter === cat.key
                     ? "bg-white text-black border-white"
                     : "bg-transparent text-muted border-white/10 hover:border-white/30 hover:text-white"
                 }`}
               >
-                {cat}
+                {cat.label}
               </button>
             ))}
           </div>
