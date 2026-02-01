@@ -1,0 +1,44 @@
+import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+
+export default function Contact() {
+  return (
+    <section id="contact" className="py-20 relative">
+      <div className="container mx-auto px-6 text-center max-w-2xl">
+        <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
+          Let's <span className="text-accent">Connect</span>
+        </h2>
+        <p className="text-muted text-lg mb-10">
+          Whether you have a question, a project offering, or just want to say hi,
+          my inbox is always open.
+        </p>
+
+        <a
+          href="mailto:contact@eri.dev"
+          className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-[0_0_20px_rgba(255,255,255,0.2)] mb-12"
+        >
+          <Mail />
+          Say Hello
+        </a>
+
+        <div className="flex justify-center gap-8">
+          {[
+            { icon: <Github size={24} />, href: "https://github.com", label: "GitHub" },
+            { icon: <Linkedin size={24} />, href: "https://linkedin.com", label: "LinkedIn" },
+            { icon: <Twitter size={24} />, href: "https://twitter.com", label: "Twitter" },
+          ].map((social) => (
+            <a
+              key={social.label}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-secondary border border-white/5 text-muted hover:text-white hover:bg-accent/20 hover:border-accent/50 transition-all duration-300"
+              aria-label={social.label}
+            >
+              {social.icon}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
