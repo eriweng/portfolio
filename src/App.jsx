@@ -1,25 +1,45 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+
 function App() {
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      {/* Scanlines Overlay */}
-      <div className="fixed inset-0 pointer-events-none z-50 scanlines opacity-30"></div>
+    <div className="min-h-screen relative bg-background text-text overflow-x-hidden selection:bg-accent selection:text-white">
+      {/* Global Effects */}
+      <div className="fixed inset-0 pointer-events-none z-50 scanlines opacity-20"></div>
       
-      <main className="container mx-auto px-4 py-8 relative z-10">
-        <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-accent mb-4">
-          Hello World
-        </h1>
-        <p className="text-muted text-xl">Futuristic Portfolio initialized.</p>
+      <Navbar />
+      
+      <main>
+        <Hero />
         
-        <div className="mt-8 p-6 bg-secondary rounded-xl border border-white/10">
-          <h2 className="text-2xl font-bold mb-2">System Status</h2>
-          <div className="flex items-center gap-2">
-            <span className="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_10px_theme('colors.green.500')]"></span>
-            <span className="font-mono text-sm">ONLINE</span>
+        {/* Placeholder Sections to enable scrolling */}
+        <section id="projects" className="min-h-screen py-20 border-t border-white/5">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-display font-bold mb-8">Selected Projects</h2>
+            <p className="text-muted">Coming soon...</p>
           </div>
-        </div>
+        </section>
+
+        <section id="about" className="min-h-screen py-20 border-t border-white/5">
+           <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-display font-bold mb-8">About Me</h2>
+            <p className="text-muted">Coming soon...</p>
+          </div>
+        </section>
+
+        <section id="contact" className="min-h-[50vh] py-20 border-t border-white/5">
+           <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-display font-bold mb-8">Contact</h2>
+            <p className="text-muted">Coming soon...</p>
+          </div>
+        </section>
       </main>
+      
+      <footer className="py-8 border-t border-white/10 text-center text-muted text-sm">
+        <p>© 2026 Eri.dev. All rights reserved.</p>
+      </footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
